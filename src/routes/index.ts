@@ -1,5 +1,6 @@
 import * as VueRouter from 'vue-router'
 
+import { useCounterStore } from '@/store/counter'
 
 const routes = [
   {
@@ -20,6 +21,8 @@ const router = VueRouter.createRouter({
 })
 
 router.beforeEach((to, from, next) => {
+  const counter = useCounterStore()
+  console.log('count >>>', counter.count)
   next()
 })
 
