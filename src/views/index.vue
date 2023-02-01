@@ -16,6 +16,9 @@ const toHome = () => {
     path: '/home'
   })
 }
+
+console.log(import.meta.env.VITE_BASE_URL)
+
 </script>
 
 <style lang="less" scoped></style>
