@@ -52,12 +52,12 @@ module.exports = {
     'no-return-await': 2, // 禁用不必要的[return/await]
     'no-self-compare': 2, // 禁止自身比较表达式
     'no-useless-catch': 2, // 禁止不必要的catch子句
-    'no-useless-return': 2, // 禁止不必要的return语句
+    'no-useless-return': 'off', // 禁止不必要的return语句
     'no-mixed-spaces-and-tabs': 2, // 禁止空格和tab的混合缩进
     'no-multiple-empty-lines': 2, // 禁止出现多行空行
     'no-trailing-spaces': 2, // 禁止一行结束后面不要有空格
     'no-useless-call': 2, // 禁止不必要的.call()和.apply()
-    'no-var': 2, // 禁止出现var用let和const代替
+    'no-var': 'off', // 禁止出现var用let和const代替
     'no-delete-var': 'off', // 允许出现delete变量的使用
     'no-shadow': 'off', // 允许变量声明与外层作用域的变量同名
     'dot-notation': 2, // 要求尽可能地使用点号
@@ -122,6 +122,8 @@ module.exports = {
     ],
     'prettier/prettier': 'off',
     'vue/multi-word-component-names': 'off',
-    '@typescript-eslint/no-explicit-any': 'off'
+    '@typescript-eslint/no-explicit-any': 'off',
+    "no-unused-vars": "off",
+    "@typescript-eslint/no-unused-vars": "warn"
   }
 }

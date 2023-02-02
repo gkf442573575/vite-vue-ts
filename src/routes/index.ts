@@ -13,6 +13,11 @@ const routes = [
     name: 'Home',
     component: () => import('../views/home.vue')
   },
+  {
+    path: '/todo',
+    name: 'ToDo',
+    component: () => import('../views/todos.vue')
+  },
 ]
 
 const router = VueRouter.createRouter({
